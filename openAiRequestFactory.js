@@ -1,3 +1,9 @@
+require('dotenv').config();
+
+const openAiChatFactory = (model, userVars) => {
+    // Use the API key from the environment variables
+    const api_key = process.env.OPENAI_API_KEY;
+
 const openAiChatFactory = (api_key, model, userVars) => {
     // Returns a new function for sending messages
     return async (message) => {
@@ -45,7 +51,7 @@ const openAiChatFactory = (api_key, model, userVars) => {
 
 // Usage:
 const userVars = { username: "JohnDoe" };
-const sendMessage = openAiChatFactory('your_openai_api_key', 'davinci-codex', userVars);
+const sendMessage = openAiChatFactory('davinci-codex', userVars);
 sendMessage('Hello, how can I assist you today?').then(response => {
     console.log('OpenAI response:', response);
 }).catch(error => {
