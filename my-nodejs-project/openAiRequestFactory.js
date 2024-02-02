@@ -5,7 +5,6 @@ const OpenAI = require('openai');
 const openai = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
   });
-  console.log(openai.apiKey);
 
 async function main() {
     const stream = await openai.chat.completions.create({
@@ -18,4 +17,4 @@ for await (const chunk of stream) {
 }
 }
   
-main();
+console.log(main());
