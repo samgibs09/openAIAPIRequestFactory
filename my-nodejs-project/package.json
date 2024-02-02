@@ -1,0 +1,25 @@
+{
+  "name": "open-ai-request-factory",
+  "version": "1.0.0",
+  "description": "A factory for producing openAI responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgibs09/openAIAPIRequestFactory.git"
+  },
+  "keywords": [
+    "openai",
+    "api",
+    "request",
+    "factory"
+  ],
+  "author": "sgibbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgibs09/openAIAPIRequestFactory/issues"
+  },
+  "homepage": "https://github.com/samgibs09/openAIAPIRequestFactory#readme"
+}
